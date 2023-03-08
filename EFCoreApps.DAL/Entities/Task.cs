@@ -26,5 +26,7 @@ namespace EFCoreApps.DAL.Entities
         public int UserId { get; set; }
 
         public User User{ get; set; }
+
+        public IEnumerable<Tag> Tags { get; set; } = new List<Tag>();
     }
 }
